@@ -9,11 +9,6 @@ This is a Vue 3 application using Vue and Quasar for user list.
 - Show details of users
 ```
 
-## Code Documentation
-```
-Added detailed comments explaining each key feature and logic block within the code to improve readability and maintainability.
-```
-
 ## Clone project repo
 ```
 git clone https://github.com/FaidhiGhazali/user-list.git
