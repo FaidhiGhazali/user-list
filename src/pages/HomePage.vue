@@ -133,7 +133,7 @@ const getUserList = async (props) => {
 
 
 const onSearch = () => {
-  const lowerSearch = searchQuery.value.toLowerCase()
+  const lowerSearch = (searchQuery.value || '').toLowerCase()
   filteredUserList.value = userList.value.filter(user =>
     user.name.toLowerCase().includes(lowerSearch) ||
     user.email.toLowerCase().includes(lowerSearch) ||
