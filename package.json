@@ -1,8 +1,8 @@
 {
   "name": "vue-quasar-boilerplate",
   "version": "0.0.1",
-  "description": "A Quasar Project",
-  "productName": "Quasar Boilerplate",
+  "description": "Kiratech",
+  "productName": "Kiratech",
   "author": "faidhi <faidhi@serasi.tech>",
   "type": "module",
   "private": true,

@@ -1,42 +1,11 @@
 <template>
-  <q-header elevated >
+  <q-header class="bg-white" style="height: 100px;">
       <q-toolbar>
-        <q-btn
-          flat
-          dense
-          round
-          icon="menu"
-          aria-label="Menu"
-          @click="emit('toggle-drawer')"
-        />
-
-        <q-toolbar-title>
-          Quasar App
-        </q-toolbar-title>
-
-        <q-btn
-        flat
-        dense
-        icon="logout"
-        label="Logout"
-        @click="onLogout"
-      />
-
+         <img class="q-pt-md" src="../assets/Logo.png" alt="Logo" style="height: 70px;" />
       </q-toolbar>
     </q-header>
 
 </template>
 <script setup>
-import { useRouter } from 'vue-router';
-import { useConfigStore } from "../stores/example-store";
-
-const emit = defineEmits(['toggle-drawer'])
-const router = useRouter();
-const configStore = useConfigStore();
-
-const onLogout = () => {
-  configStore.logout();
-  router.replace("/login");
-};
 
 </script>
