@@ -1,32 +1,30 @@
-# Quasar Boilerplate (vue-quasar-boilerplate)
+# Interview Assessement Kiratech
 
-A Quasar Project
+This is a Vue 3 application using Vue and Quasar for user list.
+
+## Features
+```
+- Fetch users list from api
+- Display users in tabulate form
+- Show details of users
+```
+
+## Code Documentation
+```
+Added detailed comments explaining each key feature and logic block within the code to improve readability and maintainability.
+```
+
+## Clone project repo
+```
+git clone https://github.com/FaidhiGhazali/user-list.git
+```
 
 ## Install the dependencies
-```bash
-yarn
-# or
+```
 npm install
 ```
 
-### Start the app in development mode (hot-code reloading, error reporting, etc.)
-```bash
-quasar dev
+### Start the app in development mode
 ```
-
-
-### Lint the files
-```bash
-yarn lint
-# or
-npm run lint
+npx quasar dev
 ```
-
-
-### Build the app for production
-```bash
-quasar build
-```
-
-### Customize the configuration
-See [Configuring quasar.config.js](https://v2.quasar.dev/quasar-cli-vite/quasar-config-js).
