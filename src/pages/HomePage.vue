@@ -186,6 +186,8 @@ onMounted(() => {
 }
 
 .user-card {
+  border: 1px solid transparent;
+  transition: border-color 0.3s ease;
   min-height: 80px;
   display: flex;
   align-items: center;
@@ -193,6 +195,11 @@ onMounted(() => {
   border-bottom: 1px solid #ddd;
   border-radius: 4px;
   box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.05);
+}
+
+.user-card:hover {
+  border-color: #007bff;
+  cursor: pointer;
 }
 
 </style>
