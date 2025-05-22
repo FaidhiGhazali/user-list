@@ -28,10 +28,6 @@
             <div class="col-4">Email:</div>
             <div class="col-8">{{ user?.email }}</div>
           </div>
-          <div class="row">
-            <div class="col-4">Registered:</div>
-            <div class="col-8">{{ user?.registered }}</div>
-          </div>
         </div>
       </q-card-section>
     </q-card>
@@ -39,19 +35,13 @@
 </template>
 
 <script setup>
-import { computed } from 'vue'
 
+const dialogModel = defineModel()
 const props = defineProps({
-  modelValue: Boolean,
   user: Object
 })
 
-const emit = defineEmits(['update:modelValue'])
-
-const dialogModel = computed({
-  get: () => props.modelValue,
-  set: (val) => emit('update:modelValue', val)
-})
+console.log(props)
 </script>
 
 <style scoped>

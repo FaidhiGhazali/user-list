@@ -104,7 +104,7 @@ const getUserList = async (props) => {
     if (Array.isArray(results)) {
       userList.value = results.map(user => ({
         name: `${user.name.first} ${user.name.last}`,
-        gender: user.gender.toUpperCase(),
+        gender: user.gender.charAt(0).toUpperCase() + user.gender.slice(1).toLowerCase(),
         email: user.email,
         country: user.location.country,
         registered: new Intl.DateTimeFormat('en-GB', {
